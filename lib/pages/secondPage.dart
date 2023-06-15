@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:uts/components/horizitem.dart';
 import 'package:uts/components/liveBiding.dart';
+import 'package:uts/pages/Api.dart';
 
 class secondPage extends StatefulWidget {
   const secondPage({super.key});
@@ -250,7 +251,8 @@ class _secondPageState extends State<secondPage> {
                                         size: 20,
                                       )
                                     ],
-                                  )
+                                  ),
+                                  SizedBox(height: 15,),
                                 ],
                               ),
                             )
@@ -259,9 +261,13 @@ class _secondPageState extends State<secondPage> {
                       ),
                     ],
                   ),
-                  SizedBox(
-                    height: 100,
-                  ),
+
+                  Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: 500,
+                    color: Colors.blue,
+                    child: buildernya(),
+                  )
                 ],
               ),
             ),
